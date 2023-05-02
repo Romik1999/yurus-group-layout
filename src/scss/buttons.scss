@@ -1,0 +1,45 @@
+@import "./colors";
+
+.btn {
+  text-decoration: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  column-gap: 8px;
+  padding: 15px 20px;
+  box-sizing: border-box;
+  width: fit-content;
+  transition: 0.2s;
+  min-width: 232px;
+  white-space: nowrap;
+
+  font-family: Gilroy, sans-serif;
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 120%;
+
+
+  &--blue {
+    background-color: $blue;
+    color: $white;
+    border: 1px solid $blue;
+
+    &:hover {
+      background-color: transparent;
+      color: $blue;
+    }
+  }
+
+  &--red {
+    background-color: $red;
+    color: $white;
+    border: 1px solid $red;
+
+    &:hover {
+      background-color: transparent;
+      color: $red;
+    }
+  }
+}
