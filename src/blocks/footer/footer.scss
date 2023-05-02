@@ -1,5 +1,30 @@
 @import "../../scss/colors.scss";
 
 .footer {
+  padding-top: 48px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 32px;
 
+  @media screen and (max-width: 992px) {
+    padding-top: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+  }
+
+  &__text {
+    font-family: Gilroy, sans-serif;
+    font-size: 15px;
+    line-height: 120%;
+    text-align: center;
+    color: $dark-blue;
+    max-width: 770px;
+    width: 100%;
+    margin: 0 auto;
+
+    @media screen and (max-width: 992px) {
+      font-size: 14px;
+    }
+  }
 }

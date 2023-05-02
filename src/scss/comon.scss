@@ -7,7 +7,7 @@ body {
   font-family: Roboto, sans-serif;
   font-size: 20px;
   line-height: 120%;
-  color: $black;
+  color: $dark-blue;
   font-weight: 400;
   min-height: 100vh;
   display: flex;
@@ -32,7 +32,7 @@ main {
 }
 
 .cont {
-  max-width: 1450px;
+  max-width: 1560px;
   width: 100%;
   margin: 0 auto;
   position: relative;

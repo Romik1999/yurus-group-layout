@@ -1,5 +1,96 @@
 @import "../../scss/colors.scss";
 
-.footer {
+.hero {
+  padding: 0 30px;
 
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 20px;
+  }
+
+  &__info {
+    max-width: 42%;
+    width: 100%;
+    padding: 50px 0;
+  }
+
+  &__title {
+    font-family: Gilroy, sans-serif;
+    font-weight: 900;
+    font-size: 80px;
+    line-height: 110%;
+    text-transform: uppercase;
+  }
+
+  &__subtitle {
+    font-family: Gilroy, sans-serif;
+    font-weight: 900;
+    font-size: 70px;
+    line-height: 110%;
+    margin-bottom: 30px;
+
+    & span {
+      &:nth-child(2) {
+        color: $red;
+      }
+    }
+  }
+
+  &__advantages {
+    margin-bottom: 35px;
+  }
+
+  &__advantage {
+    display: flex;
+    align-items: flex-start;
+    column-gap: 10px;
+
+    &:not(:last-child) {
+      margin-bottom: 15px;
+    }
+  }
+
+  &__icon {
+    display: flex;
+    width: 45px;
+    min-width: 45px;
+
+    & svg,
+    & img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  &__text {
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 120%;
+  }
+
+  &__notice {
+    font-family: Gilroy, sans-serif;
+    font-size: 25px;
+    line-height: 120%;
+    margin-bottom: 15px;
+  }
+
+  &__button {
+    max-width: 375px;
+    width: 100%;
+  }
+
+  &__img {
+    max-width: 48%;
+    width: 100%;
+    display: flex;
+
+    & img,
+    & svg {
+      width: 100%;
+      height: auto;
+    }
+  }
 }
