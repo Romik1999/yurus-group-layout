@@ -1,0 +1,8 @@
+@import "../../scss/colors.scss";
+
+.quiz {
+
+  @media screen and (max-width: 992px) {
+    padding: 20px 15px;
+  }
+}

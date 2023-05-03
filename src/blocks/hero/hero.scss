@@ -3,17 +3,38 @@
 .hero {
   padding: 0 30px;
 
+  @media screen and (max-width: 769px) {
+    padding-top: 40px;
+    padding-bottom: 50px;
+  }
+
   &__wrapper {
     display: flex;
     align-items: center;
     justify-content: space-between;
     column-gap: 20px;
+
+    @media screen and (max-width: 992px) {
+      flex-direction: column;
+    }
   }
 
   &__info {
     max-width: 42%;
     width: 100%;
     padding: 50px 0;
+
+    @media screen and (max-width: 992px) {
+      max-width: 100%;
+      padding: 0;
+    }
+
+    & .hero__button,
+    & .hero__notice {
+      @media screen and (max-width: 769px) {
+        display: none;
+      }
+    }
   }
 
   &__title {
@@ -22,6 +43,15 @@
     font-size: 80px;
     line-height: 110%;
     text-transform: uppercase;
+
+    @media screen and (max-width: 1199px) {
+      font-size: 64px;
+    }
+
+    @media screen and (max-width: 769px) {
+      text-align: center;
+      font-size: 45px;
+    }
   }
 
   &__subtitle {
@@ -30,6 +60,15 @@
     font-size: 70px;
     line-height: 110%;
     margin-bottom: 30px;
+
+    @media screen and (max-width: 1199px) {
+      font-size: 56px;
+    }
+
+    @media screen and (max-width: 769px) {
+      text-align: center;
+      font-size: 35px;
+    }
 
     & span {
       &:nth-child(2) {
@@ -40,12 +79,21 @@
 
   &__advantages {
     margin-bottom: 35px;
+
+    @media screen and (max-width: 769px) {
+      margin-bottom: 0;
+    }
   }
 
   &__advantage {
     display: flex;
     align-items: flex-start;
     column-gap: 10px;
+
+    @media screen and (max-width: 769px) {
+      flex-direction: column;
+      align-items: center;
+    }
 
     &:not(:last-child) {
       margin-bottom: 15px;
@@ -68,6 +116,14 @@
     font-weight: 500;
     font-size: 25px;
     line-height: 120%;
+
+    @media screen and (max-width: 1199px) {
+      font-size: 20px;
+    }
+
+    @media screen and (max-width: 769px) {
+      text-align: center;
+    }
   }
 
   &__notice {
@@ -75,11 +131,23 @@
     font-size: 25px;
     line-height: 120%;
     margin-bottom: 15px;
+
+    @media screen and (max-width: 1199px) {
+      font-size: 20px;
+    }
+
+    @media screen and (max-width: 769px) {
+      text-align: center;
+    }
   }
 
   &__button {
     max-width: 375px;
     width: 100%;
+
+    @media screen and (max-width: 769px) {
+      margin: 0 auto;
+    }
   }
 
   &__img {
@@ -87,10 +155,37 @@
     width: 100%;
     display: flex;
 
+
+    & .hero__button,
+    & .hero__notice {
+      display: none;
+
+      @media screen and (max-width: 769px) {
+        display: flex;
+      }
+    }
+
+    @media screen and (max-width: 769px) {
+      max-width: 100%;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+    }
+
     & img,
     & svg {
       width: 100%;
       height: auto;
+
+      @media screen and (max-width: 992px) {
+        max-height: 350px;
+        width: auto;
+      }
+
+      @media screen and (max-width: 769px) {
+        max-height: 215px;
+        width: auto;
+      }
     }
   }
 }
