@@ -34,10 +34,7 @@
 .quiz__img img,
 .quiz__img svg {
   width: 100%;
-  max-height: 630px;
-  height: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
+  height: auto;
 }
 
 .quiz__title {

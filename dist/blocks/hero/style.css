@@ -156,6 +156,8 @@
   .hero {
     padding-top: 40px;
     padding-bottom: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   .hero__info .hero__button,
@@ -224,5 +226,11 @@
   .hero__img svg {
     max-height: 215px;
     width: auto;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .hero__title {
+    font-size: 40px;
   }
 }
