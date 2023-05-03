@@ -48,7 +48,6 @@ body {
   line-height: 120%;
   color: #072E52;
   font-weight: 400;
-  min-height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -874,6 +873,57 @@ input:focus-visible {
   width: 100%;
 }
 
+.thanks {
+  padding-top: 130px;
+  padding-bottom: 100px;
+}
+
+.thanks__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 575px;
+  min-height: 626px;
+  margin: 0 auto;
+  background-image: url("../../img/thanks.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.thanks__title {
+  font-weight: 900;
+  font-size: 50px;
+  line-height: 120%;
+  text-align: center;
+  color: #072E52;
+  margin-bottom: 35px;
+}
+
+.thanks__text {
+  font-family: Roboto, sans-serif;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 120%;
+  text-align: center;
+  color: #072E52;
+  margin-bottom: 60px;
+}
+
+.thanks__button {
+  max-width: 245px;
+}
+
 @media screen and (max-width: 1199px) {
   .header__logo svg,
   .header__logo img {
@@ -1270,6 +1320,29 @@ input:focus-visible {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+
+  .thanks {
+    padding-top: 100px;
+  }
+
+  .thanks__wrapper {
+    max-width: 300px;
+    min-height: 336px;
+  }
+
+  .thanks__title {
+    font-size: 30px;
+    margin-bottom: 15px;
+  }
+
+  .thanks__text {
+    font-size: 18px;
+    margin-bottom: 50px;
+  }
+
+  .thanks__button {
+    max-width: 170px;
   }
 }
 
