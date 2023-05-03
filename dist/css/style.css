@@ -473,6 +473,171 @@ input:focus-visible {
           column-gap: 20px;
 }
 
+.last {
+  padding-top: 50px;
+  background-image: url("../../img/last-bg.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: auto;
+}
+
+.last__notice {
+  font-weight: 900;
+  font-size: 35px;
+  line-height: 120%;
+  text-align: center;
+  color: #072E52;
+  max-width: 1296px;
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 80px;
+}
+
+.last__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-column-gap: 12%;
+     -moz-column-gap: 12%;
+          column-gap: 12%;
+  max-width: 1190px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.last__info {
+  max-width: 42.5%;
+  width: 100%;
+}
+
+.last__title {
+  font-weight: 900;
+  font-size: 50px;
+  line-height: 110%;
+  color: #072E52;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.last__subtitle {
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 120%;
+  color: #072E52;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.last-form__fields {
+  margin-bottom: 40px;
+}
+
+.last-form__field {
+  display: block;
+}
+
+.last-form__field:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.last-form__input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px 30px;
+  width: 100%;
+  height: 65px;
+  background: #ffffff;
+  border: 1px solid #E0E0E0;
+  border-radius: 5px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  cursor: pointer;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 120%;
+}
+
+.last-form__input:focus {
+  outline: none;
+  border: 1px solid #215EAB;
+}
+
+.last-form__input::-webkit-input-placeholder {
+  font-family: Roboto, sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 120%;
+  color: #E0E0E0;
+}
+
+.last-form__input::-moz-placeholder {
+  font-family: Roboto, sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 120%;
+  color: #E0E0E0;
+}
+
+.last-form__input:-ms-input-placeholder {
+  font-family: Roboto, sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 120%;
+  color: #E0E0E0;
+}
+
+.last-form__input::-ms-input-placeholder {
+  font-family: Roboto, sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 120%;
+  color: #E0E0E0;
+}
+
+.last-form__input::placeholder {
+  font-family: Roboto, sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 120%;
+  color: #E0E0E0;
+}
+
+.last-form__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 20px;
+     -moz-column-gap: 20px;
+          column-gap: 20px;
+}
+
+.last__img {
+  max-width: 38%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.last__img img,
+.last__img svg {
+  width: 100%;
+  height: auto;
+}
+
 .advantages {
   background-color: #ffffff;
   padding: 18px 30px;
@@ -867,6 +1032,19 @@ input:focus-visible {
     margin-bottom: 35px;
   }
 
+  .last__notice {
+    display: none;
+  }
+
+  .last__info {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .last__img {
+    display: none;
+  }
+
   .modal {
     padding: 20px 15px;
   }
@@ -914,7 +1092,7 @@ input:focus-visible {
 
 @media screen and (max-width: 950px) {
   section {
-    padding: 30px 15px;
+    padding: 30px 20px;
   }
 
   .section-title {
@@ -1053,6 +1231,24 @@ input:focus-visible {
     -webkit-column-gap: 10px;
        -moz-column-gap: 10px;
             column-gap: 10px;
+  }
+
+  .last__title {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+
+  .last__subtitle {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+
+  .last-form__fields {
+    margin-bottom: 35px;
+  }
+
+  .last-form__input {
+    height: 60px;
   }
 
   .advantages {
