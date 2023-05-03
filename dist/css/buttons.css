@@ -53,3 +53,9 @@
   background-color: transparent;
   color: #CA534B;
 }
+
+@media screen and (max-width: 769px) {
+  .btn {
+    height: 60px;
+  }
+}

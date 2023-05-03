@@ -4,22 +4,38 @@
   background-color: $white;
   padding: 18px 30px;
 
+
+  @media screen and (max-width: 769px) {
+    padding: 40px 20px;
+  }
+
+
   &__items {
     display: flex;
     align-items: center;
     column-gap: 20px;
-    //display: grid;
-    //grid-template-columns: repeat(auto-fill, minmax(297px, 1fr));
-    //grid-template-rows: auto;
-    //grid-gap: 20px;
+    row-gap: 25px;
+
+    @media screen and (max-width: 1199px) {
+      flex-wrap: wrap;
+    }
   }
 
   &__item {
-    max-width: 50%;
-    width: calc(50% - 10px);
     display: flex;
     align-items: center;
     column-gap: 20px;
+
+    @media screen and (max-width: 1199px) {
+      column-gap: 15px;
+      max-width: 50%;
+      width: calc(50% - 10px);
+    }
+
+    @media screen and (max-width: 769px) {
+      width: 100%;
+      max-width: 100%;
+    }
   }
 
   &__icon {
@@ -27,6 +43,12 @@
     width: 75px;
     min-width: 75px;
     height: 75px;
+
+    @media screen and (max-width: 1199px) {
+      width: 64px;
+      min-width: 64px;
+      height: 64px;
+    }
 
     & svg,
     & img {
@@ -39,5 +61,9 @@
   &__text {
     font-size: 20px;
     line-height: 120%;
+
+    @media screen and (max-width: 1199px) {
+      font-size: 18px;
+    }
   }
 }
