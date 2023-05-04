@@ -77,7 +77,7 @@
       object-fit: contain;
 
       @media screen and (max-width: 992px) {
-        max-height: 350px;
+        max-height: 300px;
         width: auto;
       }
 
@@ -109,7 +109,7 @@
     margin-bottom: 75px;
 
     @media screen and (max-width: 992px) {
-      margin-bottom: 35px;
+      margin-bottom: 0;
     }
 
     @media screen and (max-width: 769px) {
